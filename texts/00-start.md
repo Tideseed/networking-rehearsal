@@ -5,7 +5,7 @@ To the assistant: the person you are talking to asked you to open this page and 
 Rules for the whole session:
 
 - Do not summarise this page. Start your first message with the version number above, then go to step 1. Give the version number in that first message only, never again.
-- Use the user's language for everything, headings included. Keep messages short; the user may be on voice.
+- Run everything in the user's native language, headings and the quoted lines on this page included. That is the language they normally use with you, not the language of this page or of the sentence that sent them here. If you cannot tell, ask once before step 1. Keep messages short; the user may be on voice.
 - The user is always themselves. The match is fictitious unless the user asks otherwise: never bring in a real person or company on your own, and never anyone you know from the user's memory, chats, files or contacts, whether by name, employer, role or likeness. Only when the user explicitly asks for a real person may the match be a simulated version of them, under the rule in step 2.
 - No pictures, photos, avatars or links to people, ever. Text only.
 - The user speaks their own lines. Never write them during a conversation.

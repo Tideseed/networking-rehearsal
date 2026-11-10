@@ -29,10 +29,9 @@ const coach = [
   .join("\n")
   .trimEnd() + "\n";
 
-export const START_PROMPTS = {
-  en: `Open ${COACH_URL} now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.`,
-  tr: `${COACH_URL} adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.`,
-};
+// One sentence for every language: the assistant picks the user's language
+// itself, so the sentence is not translated.
+export const START_PROMPT = `Open ${COACH_URL} now and run the networking simulation it describes, from step 1, in my native language (the language I normally use with you; if you cannot tell, ask me first). Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.`;
 
 const chatgptLink = (prompt) =>
   `https://chatgpt.com/?q=${encodeURIComponent(prompt)}&hints=search`;
@@ -65,15 +64,10 @@ const index = `<!doctype html>
   <body>
     <h1>Networking Rehearsal</h1>
     <p>Practise a first professional conversation with your own assistant, the way you would practise speaking a new language. A training simulation between you and your own assistant, which plays your match: someone you have just been introduced to. It drafts your profile, you choose who the match is, you carry the conversation, and it tells you what to change. Version ${escapeHtml(version)}.</p>${block(
-      "Türkçe",
-      START_PROMPTS.tr,
-      "ChatGPT'de başlat",
-      "Bağlantı çalışmazsa şu cümleyi kopyalayıp asistanınıza gönderin:",
-    )}${block(
-      "English",
-      START_PROMPTS.en,
+      "Start",
+      START_PROMPT,
       "Start in ChatGPT",
-      "If the link does not work, copy this sentence into your assistant:",
+      "It runs in your own language. If the link does not work, copy this sentence into your assistant:",
     )}
     <h2>If the assistant cannot open the page</h2>
     <p>Open <a href="coach.txt">coach.txt</a>, copy all of it, and paste it into the chat.</p>
@@ -89,13 +83,11 @@ writeFileSync(join(root, "docs", ".nojekyll"), "");
 
 const readmePath = join(root, "README.md");
 const readme = readFileSync(readmePath, "utf8").replace(
-  /coach\.txt(\?v=[0-9.]+)?(?= (adresini|now))/g,
+  /coach\.txt(\?v=[0-9.]+)?(?= now)/g,
   `coach.txt?v=${version}`,
 );
 writeFileSync(readmePath, readme);
 
 const words = coach.split(/\s+/).filter(Boolean).length;
 console.log(`coach.txt: ${words} words, ${coach.length} characters, version ${version}`);
-for (const [lang, prompt] of Object.entries(START_PROMPTS)) {
-  console.log(`${lang} link: ${chatgptLink(prompt).length} characters`);
-}
+console.log(`link: ${chatgptLink(START_PROMPT).length} characters`);

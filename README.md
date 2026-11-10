@@ -10,7 +10,7 @@ It is a training simulation between you and your own AI assistant, which plays y
 4. You carry the conversation yourself, in text or by voice. The assistant only plays the match.
 5. It tells you what worked and what to change, and you go again.
 
-You always take part as yourself; only the match is invented.
+You always take part as yourself. The match is invented; if you ask for a real person by name, you get a labelled simulation of them, with no guarantee that the real person is anything like it.
 
 The format follows [AgentsIntro](https://agentsintro.com), which makes introductions like these between real people at real events. This repository is not connected to it: nothing here signs you up, and nothing is sent there.
 
@@ -20,18 +20,10 @@ It runs inside your own ChatGPT (or other assistant) chat. Nothing is installed 
 
 Open the start page and tap the button: <https://tideseed.github.io/networking-rehearsal/>
 
-Or send your assistant one of these sentences.
-
-Türkçe:
+Or send your assistant this sentence. It is the same for every language: the assistant runs the simulation in yours.
 
 ```text
-https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.8.0 adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.
-```
-
-English:
-
-```text
-Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.8.0 now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
+Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.8.1 now and run the networking simulation it describes, from step 1, in my native language (the language I normally use with you; if you cannot tell, ask me first). Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
 ```
 
 If the assistant cannot open the page, open [coach.txt](https://tideseed.github.io/networking-rehearsal/coach.txt) yourself, copy all of it, and paste it into the chat.
