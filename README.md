@@ -25,13 +25,13 @@ Or send your assistant one of these sentences.
 Türkçe:
 
 ```text
-https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.7.1 adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.
+https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.7.2 adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.
 ```
 
 English:
 
 ```text
-Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.7.1 now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
+Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.7.2 now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
 ```
 
 If the assistant cannot open the page, open [coach.txt](https://tideseed.github.io/networking-rehearsal/coach.txt) yourself, copy all of it, and paste it into the chat.

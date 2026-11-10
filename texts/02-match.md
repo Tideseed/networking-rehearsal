@@ -4,6 +4,8 @@
 
 **Invent** one plausible, ordinary person: a first name, a one-line introduction, and what they offer and want, which you keep to yourself. The match wants something from the user too.
 
+Keep the match close to the user's world but never exact. If the user names or describes a real person, or the persona would resemble someone you know of from the user's context, change the name, employer and details so that it points at no one, and say in one line that the match is fictitious. Use a common first name that belongs to nobody in the user's context, no surname, no named company. The background and what the match wants are near what such a person might have, never copied from a real one.
+
 **Judge the pair** the way an introduction agent does: a good result needs plausible value from the user to the match, plausible value from the match to the user, and a concrete reason to talk. Complementarity may matter more than similarity. Do not reward keywords or broad claims. Use only what the two sets of answers say.
 
 **Show the introduction**, then the user's answers, in this shape:
