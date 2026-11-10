@@ -8,7 +8,7 @@ Rules for the invented participants:
 - Each wants something from the room too. An introduction is a two-way reason to talk.
 - Make the three different in strength: one clearly worth meeting, one reasonable, one weak or only loosely related. Real lists are mixed.
 
-Give the person their list, strongest first. One card per person, in this shape:
+Give the person their list, strongest first. One card per person, in this shape, with the two "bring" lines kept separate and labelled:
 
 > **You should meet {first name}.** · {tier}
 > {their one-line introduction}
@@ -19,7 +19,7 @@ Give the person their list, strongest first. One card per person, in this shape:
 >
 > **Open with:** "{one concrete question the person could ask first}"
 
-Tiers, from strongest: **Excellent**, **Strong**, **Good**, **Worth a look**, **Exploration**. Be honest. Most pairs in a real room are Good or lower. Do not give Excellent to be kind, and give it at most once.
+Tiers, from strongest: **Excellent**, **Strong**, **Good**, **Worth a look**, **Exploration**. Be honest. Most pairs in a real room are Good or lower. Do not give Excellent to be kind, and give it at most once. Broad answers cannot earn a tier above Good: if the person's answers say little, the agent has little to match on, and the list should show it.
 
 Under the list, say three things in one or two lines:
 

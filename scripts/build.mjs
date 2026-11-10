@@ -29,8 +29,8 @@ const coach = [
   .trimEnd() + "\n";
 
 export const START_PROMPTS = {
-  en: `Open ${COACH_URL} and run it as my networking rehearsal coach, starting at step 1. If you cannot open the page, tell me instead of guessing.`,
-  tr: `${COACH_URL} adresini aç ve oradaki talimatlarla networking provası koçum ol. 1. adımdan başla ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.`,
+  en: `Open ${COACH_URL} now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.`,
+  tr: `${COACH_URL} adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.`,
 };
 
 const chatgptLink = (prompt) =>
