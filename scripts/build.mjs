@@ -73,27 +73,27 @@ const index = `<!doctype html>
       @media (prefers-color-scheme: dark) { :root { --bg: #111815; --ink: #ecefe9; --soft: #a3aea8; --line: #2a3530; --card: #18211d; --accent: #bfe3cd; --on-accent: #10201a; --safe-bg: #17291f; --safe-ink: #cfe9d9; } }
       * { box-sizing: border-box; }
       body { margin: 0; font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
-      main { max-width: 41rem; margin: 0 auto; padding: 3rem 1rem 2.5rem; }
-      h1 { font-size: clamp(2rem, 7vw, 2.9rem); line-height: 1.1; margin: 0 0 .75rem; letter-spacing: -.02em; }
-      h2 { font-size: 1.15rem; margin: 2.75rem 0 .75rem; }
-      p { margin: 0 0 1rem; }
-      .lead { font-size: 1.15rem; color: var(--soft); }
+      main { max-width: 38rem; margin: 0 auto; padding: 2rem 1rem 1.5rem; }
+      h1 { font-size: clamp(1.8rem, 6vw, 2.4rem); line-height: 1.1; margin: 0 0 .5rem; letter-spacing: -.02em; }
+      h2 { font-size: 1.05rem; margin: 1.5rem 0 .4rem; }
+      p { margin: 0 0 .7rem; }
+      .lead { font-size: 1.05rem; color: var(--soft); }
       a { color: inherit; }
       .go { display: inline-block; margin-top: .5rem; padding: .8rem 1.3rem; border-radius: 999px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
       .note { font-size: .92rem; color: var(--soft); margin-top: .75rem; }
-      .safe { margin-top: 2.5rem; padding: 1.1rem 1.2rem; border-radius: 14px; background: var(--safe-bg); color: var(--safe-ink); }
-      .safe h2 { margin: 0 0 .5rem; }
+      .safe { margin-top: 1.25rem; padding: .8rem 1rem; border-radius: 12px; background: var(--safe-bg); color: var(--safe-ink); }
+      .safe h2 { margin: 0 0 .2rem; }
+      .safe p { margin: 0; }
       .safe ul { margin: 0; padding-left: 1.15rem; }
       .safe li { margin-bottom: .35rem; }
       .safe .note { color: inherit; opacity: .8; margin-bottom: 0; }
       ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
-      ol.steps li { counter-increment: step; position: relative; padding: .7rem 0 .7rem 2.6rem; border-top: 1px solid var(--line); }
-      ol.steps li::before { content: counter(step); position: absolute; left: 0; top: .7rem; width: 1.7rem; height: 1.7rem; border-radius: 50%; border: 1px solid var(--line); text-align: center; line-height: 1.65rem; font-size: .9rem; color: var(--soft); }
-      ol.steps b { display: block; }
-      ol.steps span { color: var(--soft); }
-      pre { white-space: pre-wrap; word-break: break-word; margin: 0 0 .6rem; padding: .9rem 1rem; border-radius: 12px; border: 1px solid var(--line); background: var(--card); font: .88rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+      ol.steps li { counter-increment: step; position: relative; padding: .35rem 0 .35rem 2rem; color: var(--soft); }
+      ol.steps li::before { content: counter(step); position: absolute; left: 0; top: .4rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; border: 1px solid var(--line); text-align: center; line-height: 1.35rem; font-size: .8rem; color: var(--soft); }
+      ol.steps b { color: var(--ink); }
+      pre { white-space: pre-wrap; word-break: break-word; margin: 0 0 .6rem; padding: .7rem .85rem; border-radius: 10px; border: 1px solid var(--line); background: var(--card); font: .8rem/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; }
       button { font: inherit; font-size: .92rem; padding: .45rem .9rem; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
-      footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: .92rem; color: var(--soft); }
+      footer { margin-top: 1.5rem; padding-top: .8rem; border-top: 1px solid var(--line); font-size: .92rem; color: var(--soft); }
     </style>
   </head>
   <body>
@@ -105,34 +105,25 @@ const index = `<!doctype html>
 
       <section class="safe">
         <h2>It stays in your chat</h2>
-        <ul>
-          <li>Your rehearsal happens inside your own ChatGPT chat and stays there.</li>
-          <li>Nothing you write, and nothing about you, is sent to us or to anyone else. We never see it.</li>
-          <li>This site is one page of instructions that ChatGPT reads. It has no account, no cookies and no analytics, and it receives nothing back.</li>
-          <li>The instructions tell ChatGPT not to search the web for you or for anyone, and not to contact anyone.</li>
-          <li>The other person is played by ChatGPT. Nobody real is contacted or informed.</li>
-        </ul>
-        <p class="note">Your chat is kept by ChatGPT like any other chat of yours, under its own terms. You can delete it there at any time.</p>
+        <p>Nothing you write is sent to us or to anyone else. Your rehearsal lives only in your own ChatGPT chat, like any other chat of yours.</p>
       </section>
 
       <h2>How it goes</h2>
       <ol class="steps">
-        <li><b>Your profile</b><span>ChatGPT drafts three short answers about you from what it already knows. You correct and approve them.</span></li>
-        <li><b>Your match</b><span>You choose who to meet (a possible customer, someone a step ahead of you, someone who can open a door, or anyone you describe) and their mood.</span></li>
-        <li><b>The introduction</b><span>You see who they are, what they bring you, what you bring them and how to open.</span></li>
-        <li><b>The conversation</b><span>You speak for yourself. ChatGPT only plays the match, for a few minutes.</span></li>
-        <li><b>The debrief</b><span>What worked, what to change, and one of your lines said better. Then go again.</span></li>
+        <li><b>Profile.</b> ChatGPT drafts three short answers about you; you approve them.</li>
+        <li><b>Match.</b> You choose who to meet and their mood.</li>
+        <li><b>Introduction.</b> Who they are, why you two should talk, how to open.</li>
+        <li><b>Conversation.</b> You speak for yourself; ChatGPT plays the match.</li>
+        <li><b>Debrief.</b> What worked and what to change. Then go again.</li>
       </ol>
 
       <h2>Or send this sentence yourself</h2>
-      <p>It is the same for every language; ChatGPT answers in yours. Web search has to be on so it can open the page.</p>
-      <pre id="prompt">${escapeHtml(START_PROMPT)}</pre>
+            <pre id="prompt">${escapeHtml(START_PROMPT)}</pre>
       <button type="button" id="copy">Copy</button>
-      <p class="note">If ChatGPT cannot open the page, open <a href="coach.txt">the instructions</a>, copy all of the text and paste it into the chat. For voice, send the sentence as text first, then switch the same chat to voice.</p>
+      <p class="note">Works in any language; web search must be on. If ChatGPT cannot open the page, paste <a href="coach.txt">the instructions</a> into the chat.</p>
 
       <footer>
-        <p>The format follows <a href="https://agentsintro.com">AgentsIntro</a>, which makes introductions like these between real people at real events. This rehearsal is not connected to it: it does not sign you up and sends nothing there.</p>
-        <p>Version ${escapeHtml(version)}. Everything ChatGPT is told is public: <a href="coach.txt">read the instructions</a> or <a href="https://github.com/Tideseed/networking-rehearsal">see the source</a>.</p>
+        <p>The format follows <a href="https://agentsintro.com">AgentsIntro</a>, which does this between real people at real events; this rehearsal is not connected to it. Version ${escapeHtml(version)} · <a href="coach.txt">instructions</a> · <a href="https://github.com/Tideseed/networking-rehearsal">source</a></p>
       </footer>
     </main>
     <script>
