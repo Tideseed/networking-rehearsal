@@ -14,7 +14,7 @@ You always take part as yourself. The match is invented; if you ask for a real p
 
 The format follows [AgentsIntro](https://agentsintro.com), which makes introductions like these between real people at real events. This repository is not connected to it: nothing here signs you up, and nothing is sent there.
 
-It runs inside your own ChatGPT (or other assistant) chat. Nothing is installed and there is no account. Nothing you say is sent to this project or its authors; the chat itself stays with your assistant's provider, under their terms.
+It runs inside your own ChatGPT (or other assistant) chat and stays there. Nothing is installed and there is no account. Nothing you write, and nothing about you, is sent to this project, its authors or anyone else: the site is a page of instructions the assistant reads, with no cookies and no analytics, and it receives nothing back. The chat itself is kept by your assistant's provider like any other chat of yours, under their terms.
 
 ## Start
 
@@ -36,7 +36,8 @@ To practise by voice, send the sentence as text first, then switch the same chat
 | --- | --- |
 | `texts/` | The training texts, one file per part of the session |
 | `docs/coach.txt` | All of them joined into the one page the assistant opens |
-| `docs/index.html` | The start page with the prefilled links |
+| `docs/index.html` | The start page with the prefilled link |
+| `assets/og.svg`, `docs/og.png` | The sharing image and its source |
 | `scripts/build.mjs` | Builds `docs/` from `texts/` |
 | `VERSION` | The version printed at the top of `coach.txt` |
 

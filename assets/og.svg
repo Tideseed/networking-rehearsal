@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#14342b"/>
+  <circle cx="850" cy="300" r="130" fill="#bfe3cd"/>
+  <circle cx="990" cy="300" r="130" fill="none" stroke="#bfe3cd" stroke-width="10" stroke-dasharray="26 20"/>
+  <text x="80" y="150" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="30" font-weight="500" fill="#bfe3cd" letter-spacing="3">A TRAINING SIMULATION</text>
+  <text x="80" y="270" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="92" font-weight="700" fill="#ffffff">Networking</text>
+  <text x="80" y="370" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="92" font-weight="700" fill="#ffffff">Rehearsal</text>
+  <text x="80" y="455" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" fill="#e6efe9">Practise a first conversation</text>
+  <text x="80" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" fill="#e6efe9">with your own ChatGPT.</text>
+  <rect x="80" y="540" width="420" height="52" rx="26" fill="#bfe3cd"/>
+  <text x="290" y="575" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#14342b">Everything stays in your chat</text>
+</svg>

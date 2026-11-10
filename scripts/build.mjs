@@ -1,6 +1,8 @@
 // Joins texts/*.md into the one page an assistant opens, and writes the
-// start page with the prefilled links. No dependencies; run with `node`.
+// start page with the prefilled link. No dependencies; run with `node`.
 // Output is deterministic: the version comes from VERSION, not the clock.
+// The sharing image docs/og.png is drawn from assets/og.svg by hand:
+//   rsvg-convert -w 1200 -h 630 assets/og.svg -o docs/og.png
 import { readFileSync, readdirSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -39,46 +41,120 @@ const chatgptLink = (prompt) =>
 const escapeHtml = (text) =>
   text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-const block = (heading, prompt, button, fallback) => `
-    <section>
-      <h2>${heading}</h2>
-      <p><a class="go" href="${escapeHtml(chatgptLink(prompt))}">${button}</a></p>
-      <p>${fallback}</p>
-      <pre>${escapeHtml(prompt)}</pre>
-    </section>`;
+const SHARE_TITLE = "Networking Rehearsal";
+const SHARE_TEXT =
+  "Practise a first professional conversation with your own ChatGPT. It plays the person you were just introduced to, then tells you what to change. Everything stays in your chat.";
 
 const index = `<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Networking Rehearsal</title>
+    <title>${SHARE_TITLE}</title>
+    <meta name="description" content="${escapeHtml(SHARE_TEXT)}">
+    <link rel="canonical" href="${BASE_URL}/">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="${SHARE_TITLE}">
+    <meta property="og:title" content="${SHARE_TITLE}: practise a first conversation with your own AI">
+    <meta property="og:description" content="${escapeHtml(SHARE_TEXT)}">
+    <meta property="og:url" content="${BASE_URL}/">
+    <meta property="og:image" content="${BASE_URL}/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Networking Rehearsal. Practise a first conversation with your own ChatGPT. Everything stays in your chat.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${SHARE_TITLE}">
+    <meta name="twitter:description" content="${escapeHtml(SHARE_TEXT)}">
+    <meta name="twitter:image" content="${BASE_URL}/og.png">
+    <meta name="theme-color" content="#14342b">
     <style>
-      body { font: 16px/1.5 system-ui, sans-serif; max-width: 40rem; margin: 0 auto; padding: 1.5rem 1rem; color: #1a1a1a; background: #fff; }
-      h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 2rem; }
-      pre { white-space: pre-wrap; word-break: break-word; background: #f3f3f3; padding: .75rem; border-radius: 6px; font-size: .9rem; }
-      a.go { display: inline-block; padding: .6rem 1rem; border-radius: 6px; background: #1a1a1a; color: #fff; text-decoration: none; }
-      @media (prefers-color-scheme: dark) { body { color: #eee; background: #161616; } pre { background: #262626; } a.go { background: #eee; color: #161616; } a { color: #9cc4ff; } }
+      :root { --bg: #faf8f3; --ink: #17211d; --soft: #55615b; --line: #dedad0; --card: #fff; --accent: #14342b; --on-accent: #fff; --safe-bg: #e7f1ea; --safe-ink: #14342b; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #111815; --ink: #ecefe9; --soft: #a3aea8; --line: #2a3530; --card: #18211d; --accent: #bfe3cd; --on-accent: #10201a; --safe-bg: #17291f; --safe-ink: #cfe9d9; } }
+      * { box-sizing: border-box; }
+      body { margin: 0; font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
+      main { max-width: 41rem; margin: 0 auto; padding: 3rem 1rem 2.5rem; }
+      h1 { font-size: clamp(2rem, 7vw, 2.9rem); line-height: 1.1; margin: 0 0 .75rem; letter-spacing: -.02em; }
+      h2 { font-size: 1.15rem; margin: 2.75rem 0 .75rem; }
+      p { margin: 0 0 1rem; }
+      .lead { font-size: 1.15rem; color: var(--soft); }
+      a { color: inherit; }
+      .go { display: inline-block; margin-top: .5rem; padding: .8rem 1.3rem; border-radius: 999px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+      .note { font-size: .92rem; color: var(--soft); margin-top: .75rem; }
+      .safe { margin-top: 2.5rem; padding: 1.1rem 1.2rem; border-radius: 14px; background: var(--safe-bg); color: var(--safe-ink); }
+      .safe h2 { margin: 0 0 .5rem; }
+      .safe ul { margin: 0; padding-left: 1.15rem; }
+      .safe li { margin-bottom: .35rem; }
+      .safe .note { color: inherit; opacity: .8; margin-bottom: 0; }
+      ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+      ol.steps li { counter-increment: step; position: relative; padding: .7rem 0 .7rem 2.6rem; border-top: 1px solid var(--line); }
+      ol.steps li::before { content: counter(step); position: absolute; left: 0; top: .7rem; width: 1.7rem; height: 1.7rem; border-radius: 50%; border: 1px solid var(--line); text-align: center; line-height: 1.65rem; font-size: .9rem; color: var(--soft); }
+      ol.steps b { display: block; }
+      ol.steps span { color: var(--soft); }
+      pre { white-space: pre-wrap; word-break: break-word; margin: 0 0 .6rem; padding: .9rem 1rem; border-radius: 12px; border: 1px solid var(--line); background: var(--card); font: .88rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+      button { font: inherit; font-size: .92rem; padding: .45rem .9rem; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+      footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: .92rem; color: var(--soft); }
     </style>
   </head>
   <body>
-    <h1>Networking Rehearsal</h1>
-    <p>Practise a first professional conversation with your own assistant, the way you would practise speaking a new language. A training simulation between you and your own assistant, which plays your match: someone you have just been introduced to. It drafts your profile, you choose who the match is, you carry the conversation, and it tells you what to change. Version ${escapeHtml(version)}.</p>${block(
-      "Start",
-      START_PROMPT,
-      "Start in ChatGPT",
-      "It runs in your own language. If the link does not work, copy this sentence into your assistant:",
-    )}
-    <h2>If the assistant cannot open the page</h2>
-    <p>Open <a href="coach.txt">coach.txt</a>, copy all of it, and paste it into the chat.</p>
-    <p><a href="https://github.com/Tideseed/networking-rehearsal">Source and texts</a></p>
+    <main>
+      <h1>Networking Rehearsal</h1>
+      <p class="lead">Practise a first professional conversation with your own ChatGPT, the way you would practise speaking a new language. It plays the person you were just introduced to. You do the talking. Then it tells you what to change.</p>
+      <p><a class="go" href="${escapeHtml(chatgptLink(START_PROMPT))}">Start in ChatGPT</a></p>
+      <p class="note">About ten minutes, in your own language, by text or voice. No account and nothing to install.</p>
+
+      <section class="safe">
+        <h2>It stays in your chat</h2>
+        <ul>
+          <li>Your rehearsal happens inside your own ChatGPT chat and stays there.</li>
+          <li>Nothing you write, and nothing about you, is sent to us or to anyone else. We never see it.</li>
+          <li>This site is one page of instructions that ChatGPT reads. It has no account, no cookies and no analytics, and it receives nothing back.</li>
+          <li>The instructions tell ChatGPT not to search the web for you or for anyone, and not to contact anyone.</li>
+          <li>The other person is played by ChatGPT. Nobody real is contacted or informed.</li>
+        </ul>
+        <p class="note">Your chat is kept by ChatGPT like any other chat of yours, under its own terms. You can delete it there at any time.</p>
+      </section>
+
+      <h2>How it goes</h2>
+      <ol class="steps">
+        <li><b>Your profile</b><span>ChatGPT drafts three short answers about you from what it already knows. You correct and approve them.</span></li>
+        <li><b>Your match</b><span>You choose who to meet (a possible customer, someone a step ahead of you, someone who can open a door, or anyone you describe) and their mood.</span></li>
+        <li><b>The introduction</b><span>You see who they are, what they bring you, what you bring them and how to open.</span></li>
+        <li><b>The conversation</b><span>You speak for yourself. ChatGPT only plays the match, for a few minutes.</span></li>
+        <li><b>The debrief</b><span>What worked, what to change, and one of your lines said better. Then go again.</span></li>
+      </ol>
+
+      <h2>Or send this sentence yourself</h2>
+      <p>It is the same for every language; ChatGPT answers in yours. Web search has to be on so it can open the page.</p>
+      <pre id="prompt">${escapeHtml(START_PROMPT)}</pre>
+      <button type="button" id="copy">Copy</button>
+      <p class="note">If ChatGPT cannot open the page, open <a href="coach.txt">the instructions</a>, copy all of the text and paste it into the chat. For voice, send the sentence as text first, then switch the same chat to voice.</p>
+
+      <footer>
+        <p>The format follows <a href="https://agentsintro.com">AgentsIntro</a>, which makes introductions like these between real people at real events. This rehearsal is not connected to it: it does not sign you up and sends nothing there.</p>
+        <p>Version ${escapeHtml(version)}. Everything ChatGPT is told is public: <a href="coach.txt">read the instructions</a> or <a href="https://github.com/Tideseed/networking-rehearsal">see the source</a>.</p>
+      </footer>
+    </main>
+    <script>
+      document.getElementById("copy").addEventListener("click", function () {
+        var button = this;
+        navigator.clipboard.writeText(document.getElementById("prompt").textContent).then(function () {
+          button.textContent = "Copied";
+          setTimeout(function () { button.textContent = "Copy"; }, 1500);
+        });
+      });
+    </script>
   </body>
 </html>
+`;
+
+const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#14342b"/><circle cx="24" cy="32" r="11" fill="#bfe3cd"/><circle cx="40" cy="32" r="11" fill="none" stroke="#bfe3cd" stroke-width="3" stroke-dasharray="5 4"/></svg>
 `;
 
 mkdirSync(join(root, "docs"), { recursive: true });
 writeFileSync(join(root, "docs", "coach.txt"), coach);
 writeFileSync(join(root, "docs", "index.html"), index);
+writeFileSync(join(root, "docs", "icon.svg"), icon);
 writeFileSync(join(root, "docs", ".nojekyll"), "");
 
 const readmePath = join(root, "README.md");
