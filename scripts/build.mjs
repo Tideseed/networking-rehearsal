@@ -67,10 +67,11 @@ const index = `<!doctype html>
     <meta name="twitter:title" content="${SHARE_TITLE}">
     <meta name="twitter:description" content="${escapeHtml(SHARE_TEXT)}">
     <meta name="twitter:image" content="${BASE_URL}/og.png">
-    <meta name="theme-color" content="#14342b">
+    <meta name="theme-color" content="#6f263d">
     <style>
-      :root { --bg: #faf8f3; --ink: #17211d; --soft: #55615b; --line: #dedad0; --card: #fff; --accent: #14342b; --on-accent: #fff; --safe-bg: #e7f1ea; --safe-ink: #14342b; }
-      @media (prefers-color-scheme: dark) { :root { --bg: #111815; --ink: #ecefe9; --soft: #a3aea8; --line: #2a3530; --card: #18211d; --accent: #bfe3cd; --on-accent: #10201a; --safe-bg: #17291f; --safe-ink: #cfe9d9; } }
+      /* Colours follow agentsintro.com. */
+      :root { --bg: #f7f5f1; --ink: #171717; --soft: #6f6b65; --line: rgba(23, 23, 23, 0.16); --card: #fcfbf8; --accent: #6f263d; --on-accent: #fbf7f4; --safe-bg: #f3e7ea; --safe-ink: #5b1f32; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #1d1719; --ink: #efeae1; --soft: #a89f94; --line: rgba(239, 234, 225, 0.2); --card: #251e20; --accent: #c4677c; --on-accent: #2a1218; --safe-bg: #33262a; --safe-ink: #efeae1; } }
       * { box-sizing: border-box; }
       body { margin: 0; font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
       main { max-width: 38rem; margin: 0 auto; padding: 2rem 1rem 1.5rem; }
@@ -139,7 +140,7 @@ const index = `<!doctype html>
 </html>
 `;
 
-const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#14342b"/><circle cx="24" cy="32" r="11" fill="#bfe3cd"/><circle cx="40" cy="32" r="11" fill="none" stroke="#bfe3cd" stroke-width="3" stroke-dasharray="5 4"/></svg>
+const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#6f263d"/><circle cx="24" cy="32" r="11" fill="#f3e7ea"/><circle cx="40" cy="32" r="11" fill="none" stroke="#f3e7ea" stroke-width="3" stroke-dasharray="5 4"/></svg>
 `;
 
 mkdirSync(join(root, "docs"), { recursive: true });
