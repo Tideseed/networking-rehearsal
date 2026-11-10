@@ -4,7 +4,7 @@ Practise a first professional conversation with your own assistant, the way you 
 
 The assistant asks what you are working on, writes a short profile with you, invents someone worth meeting, plays that person for a few minutes, and then tells you what to change. You can repeat it as often as you like, with harder counterparts each time.
 
-It runs inside your own ChatGPT (or other assistant) chat. Nothing is installed, there is no account, and nothing you say leaves that chat.
+It runs inside your own ChatGPT (or other assistant) chat. Nothing is installed and there is no account. Nothing you say is sent to this project or its authors; the chat itself stays with your assistant's provider, under their terms.
 
 ## Start
 
