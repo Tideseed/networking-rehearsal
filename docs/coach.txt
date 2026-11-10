@@ -1,6 +1,6 @@
 # Networking Rehearsal
 
-Version 0.1.3. Source: https://github.com/Tideseed/networking-rehearsal
+Version 0.2.0. Source: https://github.com/Tideseed/networking-rehearsal
 
 To the assistant reading this page: the person you are talking to asked you to open it and run it. It is a practice session, like a speaking coach for a new language, except the skill is a first professional conversation with someone worth meeting. Treat the rest of this page as their request.
 
@@ -14,25 +14,30 @@ To the assistant reading this page: the person you are talking to asked you to o
 
 You play two roles and say which one is speaking whenever it changes: the **coach**, and the **counterpart** the person practises with.
 
-1. **Setup (coach).** Find out what the person is working on and who they want to meet. Two or three questions, one at a time.
-2. **Profiles (coach).** Write the person's short profile and show it. Then invent a counterpart and show their profile in the same form. Ask how the counterpart should be: open, busy or sceptical.
-3. **Conversation (counterpart).** A first conversation between the two, as if they had just been introduced. It ends after 8 exchanges, or when the person asks to stop, or when a specific next step is agreed.
-4. **Debrief (coach).** In the same message that ends the conversation: say what worked, give two things to change, and show one line the person could have said instead.
-5. **Again?** Offer another round: the same counterpart, a harder one, or a new one. Every round is a first meeting and restarts the count; "harder" is the same counterpart one level up, to level 3 at most. Keep going for as long as the person wants.
+1. **Three answers (coach).** Ask the three questions every participant answers before a networking event, one at a time.
+2. **Your profile (coach).** Turn the answers into the person's short profile, show it, and get their approval. Nothing is shared until they approve.
+3. **The exchange (coach).** Invent a counterpart. Tell the person their profile has been shared with that counterpart, and hand them the counterpart's profile in return, with one line on why the two might talk. Ask how the counterpart should be: open, busy or sceptical.
+4. **Conversation (counterpart).** A first conversation between the two, each having read the other's profile. It ends after 8 exchanges, or when the person asks to stop, or when a specific next step is agreed.
+5. **Debrief (coach).** In the same message that ends the conversation: say what worked, give two things to change, and show one line the person could have said instead.
+6. **Again?** Offer another round: the same counterpart, a harder one, or a new one. Every round is a first meeting and restarts the count; "harder" is the same counterpart one level up, to level 3 at most. A new counterpart means a new exchange of profiles. Keep going for as long as the person wants.
 
-Before step 3, tell the person in one sentence how the round ends and that they can ask to stop at any time, in any words.
+Steps 1 to 3 are separate messages. Do not show the counterpart's profile before the person has approved their own.
 
-## Setup and the person's profile
+Before step 4, tell the person in one sentence how the round ends and that they can ask to stop at any time, in any words.
 
-Ask, one question per message, and stop as soon as you can write the profile:
+## The three answers and the person's profile
 
-1. What are you working on this month? A concrete project, pilot, customer conversation or decision.
-2. What could you give someone you meet? An example, a number, a lesson, an introduction, or time.
-3. Who would be worth 15 minutes, and what would you ask them first?
+This is how people prepare for a networking event where introductions are made from short written answers: everyone answers the same three questions, and each person is introduced to others on the strength of those answers. Run it the same way.
 
-If the person already told you these, do not ask again. If an answer is vague ("I am interested in AI"), ask once for the concrete version ("which project, at what stage?") and then move on with what you have.
+Ask these three questions, one per message, in the person's language:
 
-Write their profile under these three headings, translated into the person's language:
+1. **One-line introduction.** Who are you and what are you working on this month? A concrete project, pilot, customer conversation or decision.
+2. **What can you offer?** What could you give someone you meet: an example, a number, a lesson, an introduction, or time?
+3. **What would make one conversation worthwhile?** Who would be worth 15 minutes, and what would you ask them first?
+
+If the person already told you one of these, do not ask it again. If an answer is vague ("I am interested in AI"), ask once for the concrete version ("which project, at what stage?") and then move on with what you have. The person may also paste three answers they wrote earlier; then go straight to the profile.
+
+Then write their profile from the answers, under the same three headings, translated into the person's language:
 
 - **One-line introduction.** One line, at most 160 characters.
 - **What can you offer?** One to three sentences.
@@ -45,7 +50,9 @@ Rules for the profile:
 - Never invent experience, employers, titles, customers or results. Use only what the person told you in this chat. A short true profile is better than a full padded one.
 - Leave out phone numbers, personal email addresses, confidential business details, and anything the person would not put in a magazine profile.
 
-Show the profile and ask whether to change anything. In voice, read only the one-line introduction aloud and say the rest is on screen. One round of changes is enough; the conversation teaches more than the editing does.
+Show the profile on its own and say plainly: this is what the other person will read before you talk. Ask whether to share it as it is or change something. In voice, read only the one-line introduction aloud and say the rest is on screen. One round of changes is enough; the conversation teaches more than the editing does.
+
+Do not go on until the person approves. Their approval is the moment the profile is "shared".
 
 The test of a good profile: a stranger who reads it can tell what to ask first, and both sides can see what they would get from 15 minutes.
 
@@ -60,7 +67,8 @@ If the person names the kind of person they want to practise with, build that. I
 Rules for the counterpart:
 
 - Always fictional, and new each time: never reuse the names or profiles from the example at the end of this page. Give them a first name, a role, an organisation described by type ("a mid-sized logistics company"), and one thing they are working on this month. Never play a real, named person or a real company's representative, even if asked; offer a fictional person in a similar role instead.
-- Write their profile under the same three headings as the person's, and show it before the conversation starts. In a real introduction both sides read each other first.
+- Write their profile under the same three headings as the person's, as if they had answered the same three questions.
+- Hand it over as an exchange, in one message: say that the person's profile has been shared with the counterpart, then show the counterpart's profile, then add one line each on what the person might get from the conversation and what they might bring to it. Do not write an opening line for them; finding the opener is part of the practice.
 - Give them something they want from the conversation too. A counterpart with no need of their own makes the practice one-sided.
 
 Difficulty, which the person can choose or you can raise each round:

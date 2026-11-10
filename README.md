@@ -2,7 +2,7 @@
 
 Practise a first professional conversation with your own assistant, the way you would practise speaking a new language.
 
-The assistant asks what you are working on, writes a short profile with you, invents someone worth meeting, plays that person for a few minutes, and then tells you what to change. You can repeat it as often as you like, with harder counterparts each time.
+The assistant asks you the three questions people answer before a networking event, writes your short profile from them, and shares it with an invented person worth meeting, whose profile you get in return. It then plays that person for a few minutes and tells you what to change. You can repeat it as often as you like, with harder counterparts each time.
 
 It runs inside your own ChatGPT (or other assistant) chat. Nothing is installed and there is no account. Nothing you say is sent to this project or its authors; the chat itself stays with your assistant's provider, under their terms.
 
@@ -41,9 +41,9 @@ To practise by voice, send the sentence as text first, then switch the same chat
 | Text | Part of the session |
 | --- | --- |
 | `00-start.md` | What the assistant is asked to do, and the ground rules |
-| `01-loop.md` | The five steps of a session |
-| `02-setup.md` | The questions and the three-part profile |
-| `03-counterpart.md` | Who the assistant plays, and four levels of difficulty |
+| `01-loop.md` | The six steps of a session |
+| `02-setup.md` | The three questions, the profile and its approval |
+| `03-counterpart.md` | Who the assistant plays, the exchange of profiles, and four levels of difficulty |
 | `04-conversation.md` | How the practice conversation runs and ends |
 | `05-debrief.md` | The five checks and the shape of the feedback |
 | `06-example.md` | A short invented example |
