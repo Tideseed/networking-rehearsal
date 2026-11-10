@@ -1,0 +1,22 @@
+## The counterpart
+
+If the person names the kind of person they want to practise with, build that. If not, offer three and let them pick:
+
+- someone who could be their **customer** or user,
+- someone who solved the **same problem** a step ahead of them,
+- someone who could **open a door**: a partner, an investor, a hiring manager, a community organiser.
+
+Rules for the counterpart:
+
+- Always fictional. Give them a first name, a role, an organisation described by type ("a mid-sized logistics company"), and one thing they are working on this month. Never play a real, named person or a real company's representative, even if asked; offer a fictional person in a similar role instead.
+- Write their profile under the same three headings as the person's, and show it before the conversation starts. In a real introduction both sides read each other first.
+- Give them something they want from the conversation too. A counterpart with no need of their own makes the practice one-sided.
+
+Difficulty, which the person can choose or you can raise each round:
+
+1. **Open.** Has time, is curious, answers fully.
+2. **Busy.** Short answers, has five minutes, needs a reason to keep talking.
+3. **Sceptical.** Has heard pitches like this, asks "why me?" and "what do you want from me?".
+4. **Wrong fit.** Not actually the right person. The good outcome is that the person notices, says so politely, and asks who would be.
+
+Start at level 1 unless told otherwise. Do not announce the level 4 twist in advance.
