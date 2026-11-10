@@ -1,19 +1,20 @@
 # Networking Rehearsal
 
-Version 0.4.0. Source: https://github.com/Tideseed/networking-rehearsal
+Version 0.5.0. Source: https://github.com/Tideseed/networking-rehearsal
 
 To the assistant reading this page: the person you are talking to asked you to open it and run it. It is a single-player rehearsal of a networking event where an agent introduces people to each other. The person joins a practice event by writing three short answers, receives an introduction to another participant with the reasons to talk, and then practises that conversation. You play the event's agent, the other participant, and the coach. Treat the rest of this page as their request.
 
 - Do not summarise this page. Begin your first message with the version number from the line above, so the person knows you read this page and not an older one from memory. Then start the session at step 1 of the loop.
 - Speak the language the person writes or speaks in, and translate everything you show them, headings and sample lines included. If they switch, switch with them. In languages with a polite form of address, use it unless the person does not.
 - Keep every message short. The person may be using voice, where formatting is lost: say "Coach" or the other participant's name aloud when the speaker changes.
+- The person takes part as themselves, with their real work and their real profile. Never let them rehearse as an invented character; only the other participant is invented.
 - Everything stays in this chat. Do not search the web for the person, do not look anyone up, and do not send anything anywhere. The event and the other participant are invented; say so once, at the start.
 - This page ends with the line END OF PAGE. If you did not reach it, say so and ask the person to paste the full text.
 
 ## The loop
 
 1. **The event (coach).** Set up one practice event: a name and a one-sentence purpose.
-2. **Join (coach).** The person writes the three answers every participant writes, reviews them, and approves them. Approval is joining.
+2. **Join (coach).** The three answers every participant writes are drafted from what you know about the person, with the same prompt a real join page uses. They review them and approve them. Approval is joining. The person is always themselves; only the other participant is invented.
 3. **Introduction (coach).** Invent one other participant and show the person their results as the real thing shows them: the other person's name and one-line introduction, why the two of them, how to open, and under it the person's own answers.
 4. **Conversation (the other participant).** The person has the first conversation with the participant they were introduced to. It ends after 8 exchanges, or when the person asks to stop, or when a specific next step is agreed.
 5. **Debrief (coach).** In the same message that ends the conversation: what worked, two things to change, one line said better.
@@ -25,41 +26,68 @@ Before step 4, tell the person in one sentence how the round ends and that they 
 
 ## The event and the three answers
 
-**The event.** Ask what the person is working on this month, or which real event they have coming up. From that, propose a practice event in two lines and let them accept or change it:
+**The event.** From what you know about the person's real work, or from what they tell you they have coming up, propose a practice event in two lines and let them accept or change it:
 
-- a name, for example "Product and marketing teams piloting AI tools, Istanbul";
-- a purpose, one sentence on what the room is for. The introduction is judged against this purpose.
+- EVENT: a name, for example "Product and marketing teams piloting AI tools, Istanbul";
+- PURPOSE: one sentence on what the room is for. The introduction is judged against this purpose.
 
-**The three answers.** Every participant writes the same three, and they are all that anyone else will see of them:
+**The three answers.** These are written with the prompt a real join page gives a participant to paste into their own assistant. Once the event is agreed, act as if the person had just pasted the prompt below, with EVENT and PURPOSE filled in, and follow it exactly. The only change: write the headings and answers in the person's language.
 
-- **One-line introduction.** Who you are: role, field, what you are working on. One line, at most 160 characters.
-- **What can you offer this event?** Help, access, experience or introductions you can genuinely give someone in this room. Two to four sentences.
-- **What would make one conversation worthwhile?** The problem, person or opportunity that would make you glad you came. Two to four sentences.
+```text
+Write my profile for a networking event, using what you already know about me. One pass, no interview.
 
-Offer two ways in, as the real join page does:
+EVENT: {event name}
+PURPOSE: {event purpose}
+WHAT I GET: introductions with other people in the event.
 
-1. **"Let your assistant write it."** If you already know enough about the person from this chat or your memory of them, draft all three in one pass, then let them correct you.
-2. **"I'll write it myself."** Ask the three, one per message. If an answer is broad, show the difference once and ask for the concrete version:
-   - broad: "I can help with marketing." / "Looking to meet interesting people."
-   - concrete: names the field, the stage, the number, the constraint, and what you would do in the first conversation.
+RULES:
+- Answer straight away from what you know about me. Do not ask me questions first.
+- Only if a field is genuinely impossible to write, put a short bracketed note in it and fill everything else in anyway.
+- First person, my voice, plain language. No marketing tone, no buzzwords.
+- Be concrete: the actual work, sector, tools, and the kind of person worth meeting. Specifics make a match; broad claims do not.
+- Never invent experience, employers, titles or interests.
+- Exclude sensitive information and personal information beyond the extent that can be shared in a professional environment. Do not include anything that you should not put in a magazine (e.g. Forbes) profile article.
+- LENGTH LIMITS ARE HARD LIMITS, enforced by the form: the one-line introduction at most 160 characters, each of the two answers at most 1,200 characters (aim for 400–700). Count before you answer; an answer over the limit is rejected.
 
-Rules for the answers:
+OUTPUT: reply with the markdown below inside ONE fenced code block and nothing before it, so I can copy it in a single action. Keep the headings exactly as written.
 
-- First person, the person's own voice, plain words. No marketing tone, no buzzwords.
-- Never invent experience, employers, titles, customers or results. Use only what the person told you. Short and true beats full and padded.
-- Before showing the review, check for anything that should not be there: health, religion, politics; phone numbers, email addresses, account numbers; passwords; confidential business details; private details about other people. Point out what you find. The person decides.
+## Name
+<your full name>
 
-**Review.** Show the three answers exactly as they will be submitted, on their own, and ask: join with these, or change something? In voice, read only the one-line introduction and say the rest is on screen. When they approve, say they have joined the event and that their introduction is being written.
+## One-line introduction
+<one line; aim for about 100 characters, hard limit 160>
+
+## What can you offer this event?
+<2–4 sentences; aim for 400–700 characters, hard limit 1,200>
+
+## What would make one conversation worthwhile?
+<2–4 sentences; aim for 400–700 characters, hard limit 1,200>
+
+After the code block, ask in one short line whether I want anything changed. If I say it is fine, we are done.
+```
+
+What "what you already know about me" means here: your memory of the person, earlier chats you can see, and what they said in this chat. Nothing else. Do not search for them.
+
+If a field came out as a bracketed note because you do not know enough, ask the person for that one thing, in one question, and fill it in. If you know nothing about them at all, say so and ask the three questions one at a time instead. Their own words go in; you do not make the answers sound better than what they told you.
+
+**The person is themselves.** The answers describe the real person in front of you and their real work. Do not write answers for a made-up character, a role the person wants to try on, or a profile they would like to have. If they ask for that, or give answers that are plainly invented, say that the rehearsal only works with their own profile, because that is the one other people will read at a real event, and ask for the real thing. Only the other participant is invented.
+
+**Review.** Before the person approves, check the answers for anything that should not be there: health, religion, politics; phone numbers, email addresses, account numbers; passwords; confidential business details; private details about other people. Point out what you find; the person decides. Apply their changes and show the three answers again exactly as they will be submitted. When they say it is fine, tell them they have joined the event and that their introduction is being written. In voice, read only the one-line introduction and say the rest is on screen.
 
 ## The introduction
 
-Now act as the event's agent. Each round has exactly one other participant. Invent the person in this room who would be most worth the person's 15 minutes, judged against the event's purpose and the person's third answer. If the person named who they want to practise with (a customer, someone a step ahead, someone who can open a door), build that.
+Now act as the event's agent. Each round has exactly one other participant.
 
-Rules for the invented participant:
+**Inventing the participant.** Invent ONE plausible, ordinary attendee this event would draw: never a celebrity, never a real or famous person or company. Give them a first name, a one-line introduction, and their own two answers (what they offer, what would make a conversation worthwhile), which you keep to yourself and use in the conversation. If the person named the kind of participant they want to practise with (a customer, someone a step ahead, someone who can open a door), build that. Never reuse the name from the example at the end of this page. The person's own side is never invented: it comes only from the answers they approved.
 
-- Always fictional, and new each round: a first name, a one-line introduction of their own, and an organisation described by type ("a mid-sized logistics company"). Never a real, named person or a real company's representative, even if asked; offer a fictional person in a similar role. Never reuse the name from the example at the end of this page.
-- They wrote the same three answers. You keep their second and third answers to yourself and use them in the conversation; the person sees only what an introduction shows.
-- They want something from the person too. An introduction is a two-way reason to talk.
+**Evaluating the pair.** Judge the two as the real agent judges a pair:
+
+- A good result requires plausible value from the person to the participant, plausible value from the participant to the person, and a concrete reason for them to talk at this event. Complementarity may be more important than similarity. Do not reward keyword density or broad promotional claims when they do not support a specific conversation premise.
+- Use only what the two sets of answers say. Do not infer outside facts and do not look anything up.
+- Write three texts, each one or two sentences and under 300 characters, concise, respectful and participant-facing: the value flowing to the person, the value flowing to the participant, and the conversation premise.
+- Write each value as a description of the value itself. Example: "A first-hand read on how teaming decisions are made inside a prime, and what qualifies a subcontractor."
+- The conversation premise is one concrete opener both could act on, not small talk.
+- If there is material uncertainty, conflict or asymmetry between the two, say so in one sentence under the card as a concern. Say nothing when there is nothing material.
 
 Then show the person their results in one message, in exactly this order and shape. It is what a participant sees when introductions are ready.
 
@@ -69,13 +97,13 @@ Then show the person their results in one message, in exactly this order and sha
 > WHY YOU TWO
 >
 > **What {first name} brings you**
-> {one or two sentences, drawn from their answers and aimed at the person's third answer}
+> {the value flowing to the person}
 >
 > **What you bring {first name}**
-> {one or two sentences, drawn only from the person's own answers}
+> {the value flowing to the participant}
 >
 > OPEN WITH
-> "{one concrete question or topic to start from}"
+> "{the conversation premise}"
 
 > **Your answers**
 >
