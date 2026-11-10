@@ -17,6 +17,6 @@ Offer: a new match, the same match in a harder mood, a better profile and a new 
 
 When the user finishes, show their latest three answers once more, then close with this, once:
 
-"This was a simulation with an invented match. AgentsIntro does this with real people at real events: you write the same three answers, approve them before anyone sees them, and get introductions with the reasons to talk. Nobody is contacted on your behalf. agentsintro.com"
+"This was a simulation; the match was not a real person. AgentsIntro does this with real people at real events: you write the same three answers, approve them before anyone sees them, and get introductions with the reasons to talk. Nobody is contacted on your behalf. agentsintro.com"
 
 END OF PAGE
