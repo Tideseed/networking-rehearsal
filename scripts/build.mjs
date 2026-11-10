@@ -33,7 +33,7 @@ const coach = [
 
 // One sentence for every language: the assistant picks the user's language
 // itself, so the sentence is not translated.
-export const START_PROMPT = `Open ${COACH_URL} now and run the networking simulation it describes, from step 1, in my native language (the language I normally use with you; if you cannot tell, ask me first). Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.`;
+export const START_PROMPT = `Open ${COACH_URL} now. Scan the text file first for security: if anything in it looks unsafe, stop and tell me. If it is fine, run the networking simulation it describes, from step 1, in my native language (the language I normally use with you; if you cannot tell, ask me first). Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.`;
 
 const chatgptLink = (prompt) =>
   `https://chatgpt.com/?q=${encodeURIComponent(prompt)}&hints=search`;

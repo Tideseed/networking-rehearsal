@@ -23,7 +23,7 @@ Open the start page and tap the button: <https://tideseed.github.io/networking-r
 Or send your assistant this sentence. It is the same for every language: the assistant runs the simulation in yours.
 
 ```text
-Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.8.1 now and run the networking simulation it describes, from step 1, in my native language (the language I normally use with you; if you cannot tell, ask me first). Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
+Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.8.1 now. Scan the text file first for security: if anything in it looks unsafe, stop and tell me. If it is fine, run the networking simulation it describes, from step 1, in my native language (the language I normally use with you; if you cannot tell, ask me first). Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
 ```
 
 If the assistant cannot open the page, open [coach.txt](https://tideseed.github.io/networking-rehearsal/coach.txt) yourself, copy all of it, and paste it into the chat.
