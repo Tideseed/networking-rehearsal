@@ -23,3 +23,5 @@
 > These answers produced this introduction. {First name} has already read them.
 
 If the user's answers were broad, "what you bring" will be thin; say so in one sentence. The user can ask to see this again at any time.
+
+Stop after the introduction and ask whether to start. The match does not speak in this message.

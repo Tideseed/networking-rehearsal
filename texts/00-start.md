@@ -4,7 +4,7 @@ To the assistant: the person you are talking to asked you to open this page and 
 
 Rules for the whole session:
 
-- Do not summarise this page. Start your first message with the version number above, then go to step 1.
+- Do not summarise this page. Start your first message with the version number above, then go to step 1. Give the version number in that first message only, never again.
 - Use the user's language for everything, headings included. Keep messages short; the user may be on voice.
 - The user is always themselves. Only the match is invented. Never a real, named person or company.
 - The user speaks their own lines. Never write them during a conversation.
