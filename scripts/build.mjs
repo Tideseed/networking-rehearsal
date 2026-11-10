@@ -94,6 +94,12 @@ const index = `<!doctype html>
       ol.steps b { color: var(--ink); }
       pre { white-space: pre-wrap; word-break: break-word; margin: 0 0 .6rem; padding: .7rem .85rem; border-radius: 10px; border: 1px solid var(--line); background: var(--card); font: .8rem/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; }
       button { font: inherit; font-size: .92rem; padding: .45rem .9rem; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+      dialog { max-width: 26rem; width: calc(100% - 2rem); padding: 1.25rem; border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--ink); }
+      dialog::backdrop { background: rgba(23, 23, 23, 0.5); }
+      dialog h2 { margin: 0 0 .5rem; font-size: 1.2rem; }
+      dialog .actions { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: flex-end; align-items: center; margin-top: 1rem; }
+      dialog .go { margin-top: 0; padding: .6rem 1.1rem; }
+      dialog button { padding: .6rem 1.1rem; }
       footer { margin-top: 1.5rem; padding-top: .8rem; border-top: 1px solid var(--line); font-size: .92rem; color: var(--soft); }
     </style>
   </head>
@@ -101,7 +107,7 @@ const index = `<!doctype html>
     <main>
       <h1>Networking Rehearsal</h1>
       <p class="lead">Practise a first professional conversation with your own ChatGPT, the way you would practise speaking a new language. It plays the person you were just introduced to. You do the talking. Then it tells you what to change.</p>
-      <p><a class="go" href="${escapeHtml(chatgptLink(START_PROMPT))}">Start in ChatGPT</a></p>
+      <p><a class="go" id="start" href="${escapeHtml(chatgptLink(START_PROMPT))}">Start in ChatGPT</a></p>
       <p class="note">About ten minutes, in your own language, by text or voice. No account and nothing to install.</p>
 
       <section class="safe">
@@ -127,7 +133,26 @@ const index = `<!doctype html>
         <p>The format follows <a href="https://agentsintro.com">AgentsIntro</a>, which does this between real people at real events; this rehearsal is not connected to it. Version ${escapeHtml(version)} · <a href="coach.txt">instructions</a> · <a href="https://github.com/Tideseed/networking-rehearsal">source</a></p>
       </footer>
     </main>
+    <dialog id="confirm" aria-labelledby="confirm-title">
+      <h2 id="confirm-title">You are in control</h2>
+      <p>This button takes you to your own ChatGPT and puts a prompt in the message box. Nothing is sent or done automatically: read the prompt, then press send yourself when you are ready.</p>
+      <div class="actions">
+        <button type="button" id="cancel">Cancel</button>
+        <a class="go" href="${escapeHtml(chatgptLink(START_PROMPT))}">Continue to ChatGPT</a>
+      </div>
+    </dialog>
     <script>
+      (function () {
+        var dialog = document.getElementById("confirm");
+        if (!dialog || !dialog.showModal) return;
+        document.getElementById("start").addEventListener("click", function (event) {
+          event.preventDefault();
+          dialog.showModal();
+        });
+        document.getElementById("cancel").addEventListener("click", function () { dialog.close(); });
+        dialog.addEventListener("click", function (event) { if (event.target === dialog) dialog.close(); });
+        dialog.querySelector("a.go").addEventListener("click", function () { dialog.close(); });
+      })();
       document.getElementById("copy").addEventListener("click", function () {
         var button = this;
         navigator.clipboard.writeText(document.getElementById("prompt").textContent).then(function () {
