@@ -3,7 +3,7 @@
 **The event.** Ask what the person is working on this month, or which real event they have coming up. From that, propose a practice event in two lines and let them accept or change it:
 
 - a name, for example "Product and marketing teams piloting AI tools, Istanbul";
-- a purpose, one sentence on what the room is for. Introductions are judged against this purpose.
+- a purpose, one sentence on what the room is for. The introduction is judged against this purpose.
 
 **The three answers.** Every participant writes the same three, and they are all that anyone else will see of them:
 
@@ -24,4 +24,4 @@ Rules for the answers:
 - Never invent experience, employers, titles, customers or results. Use only what the person told you. Short and true beats full and padded.
 - Before showing the review, check for anything that should not be there: health, religion, politics; phone numbers, email addresses, account numbers; passwords; confidential business details; private details about other people. Point out what you find. The person decides.
 
-**Review.** Show the three answers exactly as they will be submitted, on their own, and ask: join with these, or change something? In voice, read only the one-line introduction and say the rest is on screen. When they approve, say they have joined the event and that introductions are being written.
+**Review.** Show the three answers exactly as they will be submitted, on their own, and ask: join with these, or change something? In voice, read only the one-line introduction and say the rest is on screen. When they approve, say they have joined the event and that their introduction is being written.

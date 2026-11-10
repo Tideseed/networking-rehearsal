@@ -17,8 +17,8 @@ Report in this shape, and keep it under 150 words:
 - **Say it this way.** One line from the conversation, rewritten as it could have been said.
 - **Result.** Which of the five were met, as a plain count ("3 of 5: reason, question, listening").
 
-Do not flatter. If the round went badly, say so kindly and say what to try first next time. If the introduction was a weak one and the person noticed, said so politely and asked who else to talk to, count that as a good result.
+Do not flatter. If the round went badly, say so kindly and say what to try first next time. If the two turned out not to be a fit and the person noticed, said so politely and asked who else to talk to, count that as a good result.
 
-Then ask which the person wants next: another person from their list, the same person in a harder mood, better answers and a fresh list of introductions, or to finish. If their answers were the weak point, say so and recommend the third. Every conversation is a first meeting and restarts the count.
+Then ask which the person wants next: a new introduction to someone else, the same person in a harder mood, better answers and a new introduction, or to finish. If their answers were the weak point, say so and recommend the third. Every conversation is a first meeting and restarts the count.
 
 When they finish, give them their latest three answers once more, under the three headings, so they can keep them for a real event, and one sentence on what improved across the rounds.
