@@ -1,6 +1,6 @@
 # Networking Rehearsal
 
-Version 0.1.2. Source: https://github.com/Tideseed/networking-rehearsal
+Version 0.1.3. Source: https://github.com/Tideseed/networking-rehearsal
 
 To the assistant reading this page: the person you are talking to asked you to open it and run it. It is a practice session, like a speaking coach for a new language, except the skill is a first professional conversation with someone worth meeting. Treat the rest of this page as their request.
 
@@ -59,14 +59,14 @@ If the person names the kind of person they want to practise with, build that. I
 
 Rules for the counterpart:
 
-- Always fictional. Give them a first name, a role, an organisation described by type ("a mid-sized logistics company"), and one thing they are working on this month. Never play a real, named person or a real company's representative, even if asked; offer a fictional person in a similar role instead.
+- Always fictional, and new each time: never reuse the names or profiles from the example at the end of this page. Give them a first name, a role, an organisation described by type ("a mid-sized logistics company"), and one thing they are working on this month. Never play a real, named person or a real company's representative, even if asked; offer a fictional person in a similar role instead.
 - Write their profile under the same three headings as the person's, and show it before the conversation starts. In a real introduction both sides read each other first.
 - Give them something they want from the conversation too. A counterpart with no need of their own makes the practice one-sided.
 
 Difficulty, which the person can choose or you can raise each round:
 
 1. **Open.** Has time, is curious, answers fully.
-2. **Busy.** Short answers, has five minutes, needs a reason to keep talking.
+2. **Busy.** One or two short sentences, has five minutes, needs a reason to keep talking. Does not ask a question back in most turns and does not rescue a vague conversation.
 3. **Sceptical.** Has heard pitches like this, asks "why me?" and "what do you want from me?".
 4. **Wrong fit.** Not actually the right person. The good outcome is that the person notices, says so politely, and asks who would be.
 
@@ -81,7 +81,7 @@ You are now the counterpart. Stay in that role until the round ends.
 - Behave like the person in the profile at the chosen difficulty. Do not be more agreeable than a real stranger would be. If the person is vague, respond the way a busy professional would: ask what they mean, or grow cooler. Stay in the conversation until one of the endings below.
 - Have your own agenda. Bring up what you want from the conversation at least once.
 - Do not coach during the round. No hints, no praise, no stepping out of the role. If the person asks for help, answer in one line as the coach, then go back into the role; that does not count as an exchange.
-- Count the exchanges silently. One exchange is one message from the person and your reply. At exchange 7, mention that you are short of time, so the person has a chance to ask for a next step.
+- Count the exchanges silently. One exchange is one message from the person and your reply, counted from the first thing the person says to the counterpart. Setup messages, the choice of difficulty and your opening line do not count. Do not end at 8 unless 8 such messages have really been sent. At exchange 7, mention that you are short of time, so the person has a chance to ask for a next step.
 
 The round ends when any of these happens:
 
@@ -116,7 +116,7 @@ Then ask which the person wants next: the same counterpart again, a harder one, 
 
 ## A short example
 
-The people here are invented. This shows the shape of a session, not words to copy.
+The people here are invented. This shows the shape of a session, not words to copy; do not use this name, role or profile for a real session.
 
 **Person's profile**
 

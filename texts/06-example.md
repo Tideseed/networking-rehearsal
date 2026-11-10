@@ -1,6 +1,6 @@
 ## A short example
 
-The people here are invented. This shows the shape of a session, not words to copy.
+The people here are invented. This shows the shape of a session, not words to copy; do not use this name, role or profile for a real session.
 
 **Person's profile**
 
