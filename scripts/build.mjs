@@ -100,6 +100,8 @@ const index = `<!doctype html>
       dialog .actions { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: flex-end; align-items: center; margin-top: 1rem; }
       dialog .go { margin-top: 0; padding: .6rem 1.1rem; }
       dialog button { padding: .6rem 1.1rem; }
+      dialog .alt { margin: .9rem 0 0; text-align: right; font-size: .92rem; color: var(--soft); }
+      html { scroll-behavior: smooth; }
       footer { margin-top: 1.5rem; padding-top: .8rem; border-top: 1px solid var(--line); font-size: .92rem; color: var(--soft); }
     </style>
   </head>
@@ -124,7 +126,7 @@ const index = `<!doctype html>
         <li><b>Debrief.</b> What worked and what to change. Then go again.</li>
       </ol>
 
-      <h2>Or send this sentence yourself</h2>
+      <h2 id="send">Or send this sentence yourself</h2>
             <pre id="prompt">${escapeHtml(START_PROMPT)}</pre>
       <button type="button" id="copy">Copy</button>
       <p class="note">Works in any language; web search must be on. If ChatGPT cannot open the page, paste <a href="coach.txt">the instructions</a> into the chat.</p>
@@ -140,6 +142,7 @@ const index = `<!doctype html>
         <button type="button" id="cancel">Cancel</button>
         <a class="go" href="${escapeHtml(chatgptLink(START_PROMPT))}">Continue to ChatGPT</a>
       </div>
+      <p class="alt"><a href="#send" id="instead">Copy the prompt instead</a></p>
     </dialog>
     <script>
       (function () {
@@ -151,6 +154,7 @@ const index = `<!doctype html>
         });
         document.getElementById("cancel").addEventListener("click", function () { dialog.close(); });
         dialog.addEventListener("click", function (event) { if (event.target === dialog) dialog.close(); });
+        document.getElementById("instead").addEventListener("click", function () { dialog.close(); });
         dialog.querySelector("a.go").addEventListener("click", function () { dialog.close(); });
       })();
       document.getElementById("copy").addEventListener("click", function () {
