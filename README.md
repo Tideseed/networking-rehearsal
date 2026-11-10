@@ -15,13 +15,13 @@ Or send your assistant one of these sentences.
 Türkçe:
 
 ```text
-https://tideseed.github.io/networking-rehearsal/coach.txt adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.
+https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.5.1 adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.
 ```
 
 English:
 
 ```text
-Open https://tideseed.github.io/networking-rehearsal/coach.txt now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
+Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.5.1 now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
 ```
 
 If the assistant cannot open the page, open [coach.txt](https://tideseed.github.io/networking-rehearsal/coach.txt) yourself, copy all of it, and paste it into the chat.
@@ -56,7 +56,7 @@ Edit the files in `texts/`, raise `VERSION`, then:
 node scripts/build.mjs
 ```
 
-Commit `texts/` and `docs/` together. The page is served from `docs/` on the `main` branch.
+The build also puts the new version into the start sentences, here and on the start page, as `coach.txt?v=<version>`. Assistants keep their own copy of a page they have opened before, and the version in the address is what makes them fetch the new one. Commit `texts/`, `docs/` and `README.md` together. The page is served from `docs/` on the `main` branch.
 
 Keep `coach.txt` short. Assistants skim long pages, and the loop has to be read before anything else.
 

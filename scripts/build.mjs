@@ -7,9 +7,10 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const BASE_URL = "https://tideseed.github.io/networking-rehearsal";
-const COACH_URL = `${BASE_URL}/coach.txt`;
-
 const version = readFileSync(join(root, "VERSION"), "utf8").trim();
+// The version rides in the address: ChatGPT keeps its own copy of a page it
+// has opened before, and served 0.3.0 for the bare address while 0.5.0 was live.
+const COACH_URL = `${BASE_URL}/coach.txt?v=${version}`;
 const parts = readdirSync(join(root, "texts"))
   .filter((name) => name.endsWith(".md"))
   .sort()
@@ -85,6 +86,13 @@ mkdirSync(join(root, "docs"), { recursive: true });
 writeFileSync(join(root, "docs", "coach.txt"), coach);
 writeFileSync(join(root, "docs", "index.html"), index);
 writeFileSync(join(root, "docs", ".nojekyll"), "");
+
+const readmePath = join(root, "README.md");
+const readme = readFileSync(readmePath, "utf8").replace(
+  /coach\.txt(\?v=[0-9.]+)?(?= (adresini|now))/g,
+  `coach.txt?v=${version}`,
+);
+writeFileSync(readmePath, readme);
 
 const words = coach.split(/\s+/).filter(Boolean).length;
 console.log(`coach.txt: ${words} words, ${coach.length} characters, version ${version}`);

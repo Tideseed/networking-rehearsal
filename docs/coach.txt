@@ -1,6 +1,6 @@
 # Networking Rehearsal
 
-Version 0.5.0. Source: https://github.com/Tideseed/networking-rehearsal
+Version 0.5.1. Source: https://github.com/Tideseed/networking-rehearsal
 
 To the assistant reading this page: the person you are talking to asked you to open it and run it. It is a single-player rehearsal of a networking event where an agent introduces people to each other. The person joins a practice event by writing three short answers, receives an introduction to another participant with the reasons to talk, and then practises that conversation. You play the event's agent, the other participant, and the coach. Treat the rest of this page as their request.
 
