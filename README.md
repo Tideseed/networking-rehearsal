@@ -2,7 +2,17 @@
 
 Practise a first professional conversation with your own assistant, the way you would practise speaking a new language.
 
-It is a single-player version of a networking event where an agent makes the introductions. You join a practice event by writing three short answers. The assistant invents one other participant and shows you what you would see when introductions are ready: who you should meet, what they bring you, what you bring them, how to open, and your own answers underneath. You have the first conversation with the assistant playing that person, and get told what to change. Then you go again, with someone new, a harder mood, or better answers.
+It is a training simulation between you and your own AI assistant, which plays your **match**: someone you have just been introduced to at an event where people tend to network.
+
+1. Your assistant drafts your profile as three short answers from what it already knows about you, and you approve it.
+2. You choose the match's persona (a customer, someone a step ahead of you, someone who can open a door, or anyone you describe) and their mood.
+3. You see the introduction: who the match is, what they bring you, what you bring them, how to open, and your own answers underneath.
+4. You carry the conversation yourself, in text or by voice. The assistant only plays the match.
+5. It tells you what worked and what to change, and you go again.
+
+You always take part as yourself; only the match is invented.
+
+The format follows [AgentsIntro](https://agentsintro.com), which makes introductions like these between real people at real events. This repository is not connected to it: nothing here signs you up, and nothing is sent there.
 
 It runs inside your own ChatGPT (or other assistant) chat. Nothing is installed and there is no account. Nothing you say is sent to this project or its authors; the chat itself stays with your assistant's provider, under their terms.
 
@@ -15,13 +25,13 @@ Or send your assistant one of these sentences.
 Türkçe:
 
 ```text
-https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.5.1 adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.
+https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.6.0 adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.
 ```
 
 English:
 
 ```text
-Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.5.1 now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
+Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.6.0 now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
 ```
 
 If the assistant cannot open the page, open [coach.txt](https://tideseed.github.io/networking-rehearsal/coach.txt) yourself, copy all of it, and paste it into the chat.
@@ -40,11 +50,11 @@ To practise by voice, send the sentence as text first, then switch the same chat
 
 | Text | Part of the session |
 | --- | --- |
-| `00-start.md` | What the assistant is asked to do, and the ground rules |
-| `01-loop.md` | The six steps of a session |
-| `02-join.md` | The practice event, the three answers, review and approval |
-| `03-introduction.md` | The invented participant, the introduction card, your answers, and moods |
-| `04-conversation.md` | How the practice conversation runs and ends |
+| `00-start.md` | The two parties, user and match, and the ground rules |
+| `01-loop.md` | The five steps of a session and the setting |
+| `02-profile.md` | The prompt that drafts the user's three answers, and their approval |
+| `03-match.md` | Choosing the match's persona, how the pair is judged, the introduction and moods |
+| `04-conversation.md` | How the match behaves and how a round ends |
 | `05-debrief.md` | The five checks and the shape of the feedback |
 | `06-example.md` | A short invented example |
 

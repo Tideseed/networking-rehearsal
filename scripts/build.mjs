@@ -64,7 +64,7 @@ const index = `<!doctype html>
   </head>
   <body>
     <h1>Networking Rehearsal</h1>
-    <p>Practise a first professional conversation with your own assistant, the way you would practise speaking a new language. You join a practice event with three short answers, get introductions to invented participants with the reasons to talk, have the first conversation with one of them, and hear what to change. Version ${escapeHtml(version)}.</p>${block(
+    <p>Practise a first professional conversation with your own assistant, the way you would practise speaking a new language. A training simulation between you and your own assistant, which plays your match: someone you have just been introduced to. It drafts your profile, you choose who the match is, you carry the conversation, and it tells you what to change. Version ${escapeHtml(version)}.</p>${block(
       "Türkçe",
       START_PROMPTS.tr,
       "ChatGPT'de başlat",

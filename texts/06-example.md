@@ -1,10 +1,10 @@
 ## A short example
 
-The people here are invented. This shows the shape of a session, not words to copy; do not use these names, roles or answers for a real session.
+Both people here are invented for the example. It shows the shape of a session, not words to copy; do not use this name, these roles or these answers in a real session.
 
-**Event:** Teams piloting AI assistants at work. Purpose: people running a pilot this quarter compare what they measure and what went wrong.
+**The user chose the persona:** someone a step ahead on the same problem, in a busy mood.
 
-**What the person sees after joining**
+**What the user sees**
 
 > **Selin**
 > Support operations lead at a mid-sized software company; looks after the support assistant.
@@ -31,11 +31,11 @@ The people here are invented. This shows the shape of a session, not words to co
 > WHAT WOULD MAKE A CONVERSATION WORTHWHILE
 > Someone who has rolled out a similar assistant to at least two teams. I want to ask how they catch wrong answers before users do.
 >
-> These answers produced the introduction above. They are final for this round: the person you are about to meet has already read them.
+> These answers produced the introduction above. They are final for this round: Selin has already read them.
 
 **Two turns, busy mood**
 
-> Person: Hi Selin, thanks for making time. I am doing lots of things with AI and wanted to hear your thoughts.
+> User: Hi Selin, thanks for making time. I am doing lots of things with AI and wanted to hear your thoughts.
 >
 > Selin: Hi. I have a few minutes. Which part?
 
