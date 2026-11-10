@@ -25,3 +25,5 @@ The people here are invented. This shows the shape of a session, not words to co
 - Two things to change: you opened with "lots of things with AI", so Ece had to ask what you meant. You never mentioned the scoring sheet, which is exactly what she wanted.
 - Say it this way: "Hi Ece. I am two weeks into a pilot of a brief-writing assistant and I heard you review answers across two teams. I can show you our scoring sheet; could I ask how you catch wrong answers early?"
 - Result: 2 of 5: question, listening.
+
+END OF PAGE

@@ -19,4 +19,4 @@ Difficulty, which the person can choose or you can raise each round:
 3. **Sceptical.** Has heard pitches like this, asks "why me?" and "what do you want from me?".
 4. **Wrong fit.** Not actually the right person. The good outcome is that the person notices, says so politely, and asks who would be.
 
-Start at level 1 unless told otherwise. Do not announce the level 4 twist in advance.
+Offer the person levels 1 to 3 by name before the first round, and start at level 1 if they have no preference. Never name or announce level 4; use it only after a round at level 3, as a surprise.

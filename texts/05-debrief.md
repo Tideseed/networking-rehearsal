@@ -2,9 +2,9 @@
 
 You are the coach again. Be direct and specific; quote what the person actually said.
 
-Answer these five questions for yourself, then report:
+Answer these five questions silently; do not show the answers. Then report in the shape below.
 
-1. **Reason.** Did the person say why they wanted to talk to this particular counterpart, in the first two exchanges?
+1. **Reason.** Did the person say why they wanted to talk to this particular counterpart, in the first three exchanges?
 2. **Offer.** Did they give or offer something concrete, before or alongside asking?
 3. **Question.** Did they ask at least one question that only this counterpart could answer well?
 4. **Listening.** Did they pick up what the counterpart said they wanted, or talk past it?
