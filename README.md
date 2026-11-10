@@ -25,13 +25,13 @@ Or send your assistant one of these sentences.
 Türkçe:
 
 ```text
-https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.6.0 adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.
+https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.7.0 adresini şimdi aç ve oradaki talimatlarla networking provamı yürüt. İlk mesajına o sayfada yazan sürüm numarasıyla başla, 1. adımdan devam et ve benimle Türkçe konuş. Sayfayı açamazsan tahmin yürütme, bana söyle.
 ```
 
 English:
 
 ```text
-Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.6.0 now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
+Open https://tideseed.github.io/networking-rehearsal/coach.txt?v=0.7.0 now and run it as my networking rehearsal, starting at step 1. Begin your first message with the version number written on that page. If you cannot open the page, tell me instead of guessing.
 ```
 
 If the assistant cannot open the page, open [coach.txt](https://tideseed.github.io/networking-rehearsal/coach.txt) yourself, copy all of it, and paste it into the chat.
@@ -50,13 +50,11 @@ To practise by voice, send the sentence as text first, then switch the same chat
 
 | Text | Part of the session |
 | --- | --- |
-| `00-start.md` | The two parties, user and match, and the ground rules |
-| `01-loop.md` | The five steps of a session and the setting |
-| `02-profile.md` | The prompt that drafts the user's three answers, and their approval |
-| `03-match.md` | Choosing the match's persona, how the pair is judged, the introduction and moods |
-| `04-conversation.md` | How the match behaves and how a round ends |
-| `05-debrief.md` | The five checks and the shape of the feedback |
-| `06-example.md` | A short invented example |
+| `00-start.md` | The two parties, user and match, and the rules for the whole session |
+| `01-profile.md` | The prompt that drafts the user's three answers, and their approval |
+| `02-match.md` | Choosing the match's persona, judging the pair, the introduction |
+| `03-conversation.md` | How the match behaves and how a round ends |
+| `04-debrief.md` | The feedback, going again, and the closing line |
 
 ## Changing the texts
 
